@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "98cf83ef-5f4d-4e94-82e3-7641733e6d16",
+		"name": "Upload tài liệu vụ án",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39516604"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/cases/7/documents",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "9",
+						"type": "text"
+					},
+					{
+						"key": "X-User-Role",
+						"value": "LAWYER",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "postman-cloud:///1f0e2aae-cf80-4400-83f7-97cc78e3729d"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/cases/7/documents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cases",
+						"7",
+						"documents"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
