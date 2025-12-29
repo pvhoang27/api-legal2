@@ -1,14 +1,17 @@
 {
 	"info": {
-		"_postman_id": "7013b590-3f8a-4b3a-81a0-860bb0df3791",
-		"name": "3.Luật sư tạo vụ án",
+		"_postman_id": "17aeb1f4-043d-45a8-b4a4-c10eaff2dc71",
+		"name": "6.cập nhật tiến độ( luật sư)",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "39516604"
 	},
 	"item": [
 		{
-			"name": "http://localhost:8080/api/cases",
+			"name": "http://localhost:8080/api/cases/7/progress",
 			"request": {
+				"auth": {
+					"type": "noauth"
+				},
 				"method": "POST",
 				"header": [
 					{
@@ -17,14 +20,14 @@
 						"type": "text"
 					},
 					{
-						"key": "X-User-Role",
-						"value": "LAWYER",
+						"key": "Content-Type",
+						"value": "application/json",
 						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"title\": \"Vụ án tranh chấp đất đai tại Quận f\",\r\n    \"description\": \"Hỗ trợ khách hàng đòi lại quyền sử dụng đất theo di chúc\",\r\n    \"clientId\": 8\r\n}",
+					"raw": "{\r\n    \"content\": \"Đã tiếp nhận hồ sơ gốc từ khách hàng và đang soạn đơn khởi kiện.\",\r\n    \"status\": \"IN_PROGRESS\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -32,7 +35,7 @@
 					}
 				},
 				"url": {
-					"raw": "http://localhost:8080/api/cases",
+					"raw": "http://localhost:8080/api/cases/7/progress",
 					"protocol": "http",
 					"host": [
 						"localhost"
@@ -40,7 +43,9 @@
 					"port": "8080",
 					"path": [
 						"api",
-						"cases"
+						"cases",
+						"7",
+						"progress"
 					]
 				}
 			},

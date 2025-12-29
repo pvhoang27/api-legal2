@@ -1,0 +1,42 @@
+{
+	"info": {
+		"_postman_id": "2ad1ef8e-2e74-4d2b-ad07-26ac5a49cc8c",
+		"name": "9.xóa tài liệu vụ án(luật sư)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39516604"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/cases/7/documents/4",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "9",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/cases/7/documents/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cases",
+						"7",
+						"documents",
+						"4"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
