@@ -1,0 +1,40 @@
+{
+	"info": {
+		"_postman_id": "5759242f-94c7-45aa-854c-01248c10ed1a",
+		"name": "10.xóa vụ án",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39516604"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/cases/7",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "9",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/cases/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cases",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

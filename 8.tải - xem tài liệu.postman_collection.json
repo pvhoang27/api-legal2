@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "81fac096-d323-4079-a62d-b3a4a6d36597",
+		"name": "8.tải / xem tài liệu",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39516604"
+	},
+	"item": [
+		{
+			"name": "xem tài liệu",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "9",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/cases/7/documents/4/view",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cases",
+						"7",
+						"documents",
+						"4",
+						"view"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tải tài liệu",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "X-User-Id",
+						"value": "9",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/api/cases/7/documents/4/download",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"cases",
+						"7",
+						"documents",
+						"4",
+						"download"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
